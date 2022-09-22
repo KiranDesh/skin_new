@@ -57,7 +57,7 @@ def upload_image():
         image_path=os.path.join(app.config['UPLOAD_FOLDER'], filename)
         #print('upload_image filename: ' + filename)
         flash('Image successfully uploaded and displayed below')
-        model2 = load_model(r'C:\Users\Admin\Desktop\flask2\84_3_class.h5')
+        model2 = load_model('/home/ubuntu/kiran/84_3_class.h5')
         image = load_img(image_path, target_size=(224, 224))
         img = np.array(image)
         img = img / 255.0
